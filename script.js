@@ -4,7 +4,7 @@ const arrowLeft = document.querySelector(".slider-button-left");
 const arrowRight = document.querySelector(".slider-button-right");
 
 // this checks the position of each slide
-let counter = 1;
+let counter = 0;
 
 const totalSlides = sliderImages.length;
 

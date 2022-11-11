@@ -1,6 +1,5 @@
 # zuri-slider-task
 
-# Project Title
 Zuri Slider Task Project
 
 #Project Description

@@ -20,3 +20,12 @@ arrowRight.addEventListener("click", () => {
   }
   slider.style = "transform:translateX(" + -size * counter + "px)";
 });
+// the previous button
+arrowLeft.addEventListener("click", () => {
+  if (counter == 0) {
+    counter = 5;
+  } else {
+    counter--;
+  }
+  slider.style = "transform:translateX(" + -size * counter + "px)";
+});

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuri Silder Task</title>
+    <script
+      src="https://kit.fontawesome.com/a0b74dcb9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .slider-container {
+      display: flex;
+      overflow: hidden;
+      width: 900px;
+      height: 100vh;
+      align-items: center;
+      margin: auto;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .images-container {
+      display: flex;
+      width: 100%;
+      background-position: center;
+      margin: auto;
+    }
+    .images-container img {
+      width: 100%;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    .arrows button {
+      position: absolute;
+      top: 50%;
+      font-size: 30px;
+      padding: 20px;
+      border-radius: 50%;
+      display: none;
+      color: black;
+      border: none;
+    }
+    .arrows button.slider-button-left {
+      left: 10px;
+    }
+    .arrows button.slider-button-right {
+      right: 10px;
+    }
+    .slider-container:hover .arrows button {
+      display: block;
+    }
+    .arrows.slider-button {
+      background-color: white;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="slider-container">
+        <div class="images-container">
+          <img
+            class="slide"
+            src="./images/calling-shouting-monochrome-portrait-young-african-american-man-isolated-blue-studio-wall.jpg"
+            alt="photo 1"
+            id="first-slide"
+          />
+          <img
+            src="./images/friendly-looking-glad-female-shop-assistant-happy-help-customers-shows-way-demonstrates-discounts-shop-points-fore-finger-aside-empty-space-green-wall.jpg"
+            alt="photo 2"
+            class="slide"
+          />
+          <img
+            src="./images/happy-black-young-woman-with-pleased-facial-expression-shows-height-something.jpg"
+            alt="photo 3"
+            class="slide"
+          />
+          <img
+            src="./images/joyful-afro-woman-raises-arms-tilts-head-dressed-casual-knitted-jumper-laughs-from-happiness-celebrates-victory-isolated-yellow.jpg"
+            alt="photo 4"
+            class="slide"
+          />
+          <img
+            src="./images/shocked-dark-skinned-man-spreads-palms-sideways-reacts-with-surprisement-looks-aside-wears-black-clothes-focused-aside-with-impressed-expression-poses-torn-paper-hole-yellow-background.jpg"
+            alt="photo 5"
+            class="slide"
+          />
+          <img
+            src="./images/young-african-american-jazz-musician-playing-saxophone-yellow-studio-background-trendy-neon-light-concept-music-hobby-joyful-guy-improvising-colorful-portrait-artist.jpg"
+            alt="photo 6"
+            class="slide"
+            id="last-slide"
+          />
+        </div>
+        <div class="arrows">
+          <button class="slider-button-left">
+            <i class="fa fa-arrow-left"></i>
+          </button>
+
+          <button class="slider-button-right">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

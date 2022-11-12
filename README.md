@@ -11,7 +11,7 @@ This is a slider project for the I4GXZuri cohort2 program.
 ## Demo
 
 
-https://zuri-slider-task.vercel.app/
+https://silverbeing.github.io/zuri-slider-task/
 ## Authors
 
 - [@SilverBeing](https://github.com/SilverBeing)

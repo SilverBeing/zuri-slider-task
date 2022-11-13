@@ -23,8 +23,12 @@
         rgb(226, 77, 141) 0%,
         rgba(148, 187, 233, 1) 100%
       );
-      max-height: 100vh;
+      min-height: 100vh;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
     .heading h1 {
       text-align: center;
@@ -42,7 +46,7 @@
       display: flex;
       overflow: hidden;
       width: 500px;
-      height: 100vh;
+      height: 350px;
       align-items: center;
       margin: auto;
       flex-direction: column;
@@ -52,7 +56,7 @@
     .images-container {
       display: flex;
       width: 100%;
-      background-position: center;
+
       margin: auto;
       box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.2);
       border-radius: 15px;
@@ -62,11 +66,12 @@
       background-size: cover;
       cursor: pointer;
       border-radius: 15px;
+      background-position: center;
     }
 
     .arrows button {
       position: absolute;
-      top: 60%;
+      top: 50%;
       font-size: 30px;
       padding: 10px;
       border-radius: 50%;
@@ -89,10 +94,10 @@
   </style>
   <body>
     <main>
+      <div class="heading">
+        <h1>Silver Carousel Zuri Task</h1>
+      </div>
       <div class="slider-container">
-        <div class="heading">
-          <h1>Silver Carousel Zuri Task</h1>
-        </div>
         <div class="images-container">
           <img
             class="slide"
@@ -141,3 +146,4 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
